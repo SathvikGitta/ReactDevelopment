@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+
+:root{
+    --bg-color : #fffffe;
+    --color-text :   #2b2c34;
+    --button-bg : #6246ea;
+    --button-text : #fffffe;
+}
+
+body{
+    background: var(--bg-color);
+    max-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+li{
+    list-style: none;
+}
+
+
+
+/* Navbar Container */
+.navbar-container{
+    width: 100%;
+    height: 75px;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+}
+
+.title-link{
+    font-size: 24px;
+}
+
+ul{
+    display: flex;
+}
+
+.nav-links{
+    padding: 0px 10px;
+}
+
+.nav-links:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transform-origin: left;
+    transition: all 0.5 ease-in-out;
+}
+/* End of NavigationBar */
+
+
+/* Section-1 CTA Section */
+
+/* main-section */
+.main-section{
+    width: 100%;
+    height: 400px;
+}
+
+.section-container{
+    margin-top: 100px;
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 45px;
+}
+
+.section-container-text-cta{
+    display: flex;
+    flex-direction: column;
+}
+
+strong{
+    font-size: 34px;
+    color: var(--color-text);
+    padding-bottom: 10px;
+}
+
+.text-cta-title, .text-cta-title-heading{
+    padding-bottom: 10px;
+    font-size: 45px;
+}
+.text-cta-title::before{
+    content: '"';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 3px;
+}
+
+.text-cta-title-heading::after{
+    content: '"';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 3px;
+}
+
+.text-cta-description{
+    margin-top: 5px;
+    width: 75%;
+    font-size: 20px;
+}
+
+.button-cta, .button-link{
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;   
+    width: 200px;
+    height: 45px;
+    padding: 10px 14px;
+    background: var(--button-bg);
+    color: var(--button-text);
+}
+
+.button-link{
+    font-size: 18px;
+    font-weight: 500;
+}
+/*Image Banner*/
+.section-container-image>img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+
+}
+
+/* End of Image Banner */
+
+
+/* End fo CTA Section */
